@@ -61,8 +61,8 @@
         </v-col>
 
         <v-col class="text-center white--text" cols="3"> Untamd Inc </v-col>
-        <v-col class="text-center white--text" cols="3"> Tenants </v-col>
-        <v-col class="text-center white--text" cols="3"> Landlords </v-col>
+        <v-col class="text-center white--text" cols="3"> Gallery </v-col>
+        <v-col class="text-center white--text" cols="3"> Editorial </v-col>
         <v-col class="text-center white--text" cols="3"> Others </v-col>
 
         <v-col class="text-center white--text" cols="3"> Careers </v-col>
