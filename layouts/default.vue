@@ -56,7 +56,7 @@
           </v-btn>
         </v-col>
 
-        <v-col class="text-center white--text" cols="3"> Splashd Inc </v-col>
+        <v-col class="text-center white--text" cols="3"> Untamd Inc </v-col>
         <v-col class="text-center white--text" cols="3"> Tenants </v-col>
         <v-col class="text-center white--text" cols="3"> Landlords </v-col>
         <v-col class="text-center white--text" cols="3"> Others </v-col>
@@ -79,7 +79,7 @@
         <v-col class="text-center white--text" cols="3"> </v-col>
 
         <v-col class="text-center white--text mb-10" cols="12">
-          {{ new Date().getFullYear() }} — <strong>Splashd</strong>
+          {{ new Date().getFullYear() }} — <strong>Untamd</strong>
         </v-col>
       </v-row>
     </v-footer>
@@ -117,32 +117,13 @@
 </template>
 
 <script>
-  import { mapState, mapActions } from "vuex";
   export default {
     data() {
       return {
         dialog: false,
         clipped: false,
-        drawer: false,
-        fixed: false,
-        right: true,
-        title: "Untamed",
-        links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"],
+        title: "Untamd",
       };
-    },
-    methods: {
-      async logout() {
-        await this.$auth.logout();
-        this.$router.push("/");
-      },
-      ...mapActions({
-        logoutUser: "login/logoutUser",
-      }),
-    },
-    computed: {
-      currentUser: function () {
-        return this.$auth.user.username.toUpperCase();
-      },
     },
   };
 </script>

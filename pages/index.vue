@@ -12,7 +12,7 @@
             <v-row>
               <v-col cols="12" sm="12" md="12">
                 <div class="text-h4 mb-5">
-                  <b>Splash</b>
+                  <b>Untamd</b>
                 </div>
                 <div class="text-h6">
                   The internet’s source of freely-usable images. Powered by
@@ -157,6 +157,89 @@
           title: "Camera House",
           imageURL:
             "https://images.unsplash.com/photo-1452626212852-811d58933cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+
+        {
+          id: 4,
+          title: "Canon House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605406233726-81e6e2f52746?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605381078451-a0672a91a4be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605405809561-2ec85c966680?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605402185149-f796e03bab7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605384937950-3939d04810e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605401443012-7eaeca37b82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+
+        {
+          id: 4,
+          title: "Canon House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605401430429-1be9523a39d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605265058762-a9de6ffc71f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605407869548-958d58b7cebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+          detail_link: "/agents",
+          loading: false,
+        },
+        {
+          id: 5,
+          title: "Camera House",
+          imageURL:
+            "https://images.unsplash.com/photo-1605420800989-df3eed6214f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
           detail_link: "/agents",
           loading: false,
         },
