@@ -8,7 +8,11 @@
           src="logo.png"
         ></v-img>
       </v-list-item-avatar>
-      <v-toolbar-title v-text="title" class="mr-15" />
+      <v-toolbar-title
+        v-text="title"
+        @click="$router.push('/')"
+        class="mr-15"
+      />
 
       <v-text-field
         class="ml-16"
@@ -21,7 +25,7 @@
 
       <v-btn text class="ma-2" to="/explore">Explore</v-btn>
 
-      <v-btn text color="warning" @click="dialog = !dialog" class="ma-2">
+      <v-btn text color="info" @click="dialog = !dialog" class="ma-2">
         <v-icon left>mdi-upload</v-icon>Submit photo
       </v-btn>
       <v-divider vertical />
@@ -36,7 +40,7 @@
       <nuxt />
     </v-main>
 
-    <v-footer color="purple lighten-1" class="mt-5" padless>
+    <v-footer color="purple lighten-1" class="mt-0" padless>
       <v-row justify="center" no-gutters>
         <v-col cols="12" class="text-center ma-5">
           <v-btn class="mx-4 white--text" icon>
