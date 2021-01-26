@@ -54,14 +54,47 @@
         </v-card-text>
       </v-card>
     </v-footer>
+
+    <v-dialog v-model="dialog" persistent>
+      <v-card>
+        <v-img
+          :src="image_url"
+          contain
+          :aspect-ratio="16 / 9"
+          lazy-src="https://picsum.photos/id/11/10/6"
+        >
+          <v-btn color="translucent" icon @click="availDialog(false)">
+            <v-icon color="black">mdi-close</v-icon>
+          </v-btn>
+        </v-img>
+      </v-card>
+    </v-dialog>
   </v-app>
 </template>
 
 <script>
+  import { mapState, mapMutations } from "vuex";
+
   export default {
+    computed: {
+      ...mapState({
+        dialog: (state) => state.dialog,
+        image_url: (state) => state.image,
+      }),
+      localAttrs() {
+        const attrs = {};
+
+        if (this.variant === "default") {
+          attrs.absolute = false;
+          attrs.fixed = false;
+        } else {
+          attrs[this.variant] = true;
+        }
+        return attrs;
+      },
+    },
     data() {
       return {
-        dialog: false,
         clipped: false,
         title: "<CALBASH/>",
 
@@ -72,7 +105,7 @@
           },
           {
             icon: "mdi-twitter",
-            to: "/twotter",
+            to: "twitter.com/calbashd",
           },
           {
             icon: "mdi-facebook",
@@ -93,18 +126,12 @@
         ],
       };
     },
-    computed: {
-      localAttrs() {
-        const attrs = {};
 
-        if (this.variant === "default") {
-          attrs.absolute = false;
-          attrs.fixed = false;
-        } else {
-          attrs[this.variant] = true;
-        }
-        return attrs;
-      },
+    methods: {
+      ...mapMutations({
+        availDialog: "SHOW_DIALOG",
+        setImage: "SET_IMAGE",
+      }),
     },
   };
 </script>
