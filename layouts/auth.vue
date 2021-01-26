@@ -1,36 +1,5 @@
 <template>
   <v-app>
-    <v-app-bar elevate-on-scroll fixed app>
-      <v-toolbar-title
-        v-text="title"
-        @click="$router.push('/')"
-        class="mx-10 title"
-      />
-
-      <v-btn text to="/explore">Categories</v-btn>
-
-      <v-text-field
-        class="ml-4"
-        solo
-        dense
-        hide-details
-        prepend-inner-icon="mdi-magnify"
-        label="Search the world's best photos and images"
-      ></v-text-field>
-      <v-btn color="warning" class="mr-10">Search</v-btn>
-
-      <v-btn text to="/explore">Explore</v-btn>
-
-      <v-btn outlined color="success" class="mx-5" to="/login">
-        <v-icon left>mdi-account-lock</v-icon>
-        Login
-      </v-btn>
-
-      <v-btn color="success" class="mr-2" to="/register">
-        <v-icon left>mdi-account-plus</v-icon>Signup
-      </v-btn>
-    </v-app-bar>
-
     <v-main>
       <v-container>
         <nuxt />

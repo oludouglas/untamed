@@ -1,49 +1,7 @@
 <template>
   <v-layout column>
     <v-flex xs12 sm12 md12>
-      <v-card flat>
-        <v-img
-          height="450"
-          aspect-ratio="1"
-          lazy-src="https://picsum.photos/id/11/10/6"
-          class="white--text align-center"
-          src="https://images.unsplash.com/photo-1437751695201-298be97a82a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-          <v-card-title class="pa-10 text-left">
-            <v-row>
-              <v-col cols="12" sm="12" md="12">
-                <div class="text-h4 mb-5">
-                  <b>Untamd</b>
-                </div>
-                <div class="text-h6">
-                  The internet’s source of freely-usable images. Powered by
-                  creators everywhere.
-                </div>
-              </v-col>
-              <v-col cols="12" sm="12" md="12">
-                <v-btn large class="pa-6" color="primary" to="/explore">
-                  Take the first step
-                  <v-icon>mdi-arrow-right</v-icon>
-                </v-btn>
-              </v-col>
-
-              <v-col cols="12" sm="12" md="12" class="">
-                Photo of the day
-              </v-col>
-            </v-row>
-          </v-card-title>
-        </v-img>
-      </v-card>
-
-      <v-row class="mt-16 ml-5 mr-5 mb-16">
+      <v-row class="mx-2">
         <v-col v-for="(card, i) in tech" :key="i" cols="12" sm="4">
           <v-card class="mx-auto">
             <v-img
@@ -78,7 +36,8 @@
   export default {
     data: () => ({
       loading: false,
-
+      expand: false,
+      expand2: false,
       tech: [
         {
           id: 2,

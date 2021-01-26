@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
     <v-flex xs12 sm12 md12>
-      <v-row class="mt-16 ml-5 mr-5 mb-16">
+      <v-row>
         <v-col v-for="(card, i) in tech" :key="i" cols="12" sm="4">
           <v-card class="mx-auto">
             <v-img
